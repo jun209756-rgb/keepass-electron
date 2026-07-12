@@ -77,12 +77,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate Attestation for portable EXE
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v4
         with:
           subject-path: release/KeePassStudio-Portable-*-x64.exe
 
       - name: Generate Attestation for installer EXE
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v4
         with:
           subject-path: release/KeePassStudio-Setup-*-x64.exe
 
