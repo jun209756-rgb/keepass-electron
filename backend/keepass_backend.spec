@@ -1,6 +1,7 @@
 # -*- mode: python ; coding: utf-8 -*-
 from PyInstaller.utils.hooks import collect_all
 
+
 datas, binaries, hiddenimports = collect_all('pykeepass')
 
 a = Analysis(
@@ -31,5 +32,4 @@ exe = EXE(
     strip=False,
     upx=True,
     console=True,
-    icon='../build/icon.ico',
 )
