@@ -62,14 +62,14 @@ jobs:
         shell: pwsh
 
       - name: Upload portable EXE to Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: release/KeePassStudio-Portable-*-x64.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload installer EXE to Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: release/KeePassStudio-Setup-*-x64.exe
         env:
